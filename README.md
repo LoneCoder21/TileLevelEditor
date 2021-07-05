@@ -8,6 +8,7 @@ Tiled View
 ![Capture2](https://user-images.githubusercontent.com/46773404/124513188-13f7c980-dd8f-11eb-8626-2eae849a5860.JPG)
 
 Controls
+
 Press Tab to switch views.
 
 In Tiled View,
