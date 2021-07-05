@@ -8,9 +8,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 link_directories("vendor/SFML/lib")
 
-add_executable(LevelEditor Main.cpp)
+file(GLOB Ls "*.h" "*.cpp")
+add_executable(LevelEditor ${Ls})
 
-target_link_libraries(LevelEditor debug sfml-graphics-d.lib optimized sfml-graphics.lib)
+target_link_libraries(LevelEditor 
+sfml-graphics-d.lib optimized sfml-graphics.lib)
 target_link_libraries(LevelEditor debug sfml-window-d.lib optimized sfml-window.lib)
 target_link_libraries(LevelEditor debug sfml-system-d.lib optimized sfml-system.lib)
 

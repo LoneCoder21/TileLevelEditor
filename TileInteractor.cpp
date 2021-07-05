@@ -1,6 +1,6 @@
 #include "TileInteractor.h"
 #include <iostream>
-#include "Debug/SFMLDebug.h"
+#include "DebugTools/SFMLDebug.h"
 #include <algorithm>
 
 TileInteractor::TileInteractor(sf::RenderWindow& window, const std::string& tileset, const std::string& saveMap, float stepgrid, const sf::Vector2i& count)
@@ -11,8 +11,6 @@ TileInteractor::TileInteractor(sf::RenderWindow& window, const std::string& tile
 
 void TileInteractor::update(const sf::Event& event)
 {
-    //scheme.update(event);
-
     if (event.type == sf::Event::KeyPressed)
     {
         switch (event.key.code)
@@ -99,7 +97,7 @@ void TileInteractor::draw()
     }
     else
     {
-        //window.draw(map);
+        window.draw(map);
         window.draw(rect_select.selection);
     }    
 }

@@ -1,6 +1,6 @@
 #include "TileSet.h"
 #include <iostream>
-#include "Debug\SFMLDebug.h"
+#include "DebugTools\SFMLDebug.h"
 
 TileSet::TileSet(const sf::RenderWindow& window, const std::string& filename, int grid_step_size) : window(window), filename(filename), grid_step_size(grid_step_size)
 {

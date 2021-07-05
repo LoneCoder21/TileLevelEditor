@@ -1,5 +1,5 @@
 #include "LazyLayerMap.h"
-#include "Debug\SFMLDebug.h"
+#include "DebugTools\SFMLDebug.h"
 #include <iostream>
 
 LazyLayerMap::LazyLayerMap(sf::RenderWindow& window, const std::string& tileset, 

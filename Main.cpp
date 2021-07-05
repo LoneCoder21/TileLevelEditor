@@ -5,7 +5,7 @@
 #include <fstream>
 #include <array>
 #include "LazyLayerMap.h"
-#include "Debug\SFMLDebug.h"
+#include "DebugTools\SFMLDebug.h"
 
 int main()
 {
